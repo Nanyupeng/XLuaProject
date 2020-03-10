@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Scenes/003-define loader/define loader.unity
+  isLoaded: 1
+  isActive: 1
