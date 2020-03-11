@@ -1,0 +1,23 @@
+﻿nan = "yupeng"
+wang = 100
+isDie = true
+
+person = {
+	name = "nan",age = 28,
+	--[[
+	eat = function( arg , a , b)  -- arg 为隐藏参数
+	print(arg)
+	print(a+b)
+	print("我在吃饭")
+	end
+	--]]
+}
+
+--[[function person:eat(a,b)
+print(a+b)
+end
+--]]
+
+function person.eat(self,a,b)
+print(a+b)
+end

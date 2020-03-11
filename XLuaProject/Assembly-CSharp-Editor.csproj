@@ -349,6 +349,9 @@
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>E:/练习/XLuaProject/XLuaProject/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
+    <Reference Include="LitJson">
+      <HintPath>E:/练习/XLuaProject/XLuaProject/Assets/Plugins/LitJson.dll</HintPath>
+    </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Unity2018.3.6/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
     </Reference>
