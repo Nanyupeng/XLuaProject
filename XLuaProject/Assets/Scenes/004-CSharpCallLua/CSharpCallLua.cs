@@ -32,11 +32,34 @@ public class CSharpCallLua : MonoBehaviour
         //Debug.Log(person.age);
 
         //通过接口的方式获取
-        Iperson iperson = luaEnv.Global.Get<Iperson>("person");
-        iperson.name = "wangshimin";
-        Debug.Log(iperson.name);
-        luaEnv.DoString("print(person.name)");
-        iperson.eat(123,456);//arg 代表隐藏参数 表达式为 p.ear(p.123,456)
+        //Iperson iperson = luaEnv.Global.Get<Iperson>("person");
+        //iperson.name = "wangshimin";
+        //Debug.Log(iperson.name);
+        //luaEnv.DoString("print(person.name)");
+        //iperson.eat(123,456);//arg 代表隐藏参数 表达式为 p.ear(p.123,456)
+
+        //通过Dictionary和List获取数据
+        //Dictionary<string, int> keyValuePairs = luaEnv.Global.Get<Dictionary<string, int>>("age");
+        //int age;
+        //if (keyValuePairs.TryGetValue("nan", out age))
+        //    Debug.Log("nan 的年龄为:" + age);
+        //Dictionary<string, object> keyValuePairs = luaEnv.Global.Get<Dictionary<string, object>>("person");
+        //foreach (string key in keyValuePairs.Keys)
+        //    print(key + "---" + keyValuePairs[key]);
+        //--List
+        //List<float> list = luaEnv.Global.Get<List<float>>("person");
+        //foreach (float o in list)
+        //    Debug.Log(o);
+
+        //LuaTable类获取XluaTable数据
+        LuaTable luaTable = luaEnv.Global.Get<LuaTable>("person");
+        print(luaTable.Get<string>("name"));
+        print(luaTable.Get<string>("age"));
+        //foreach (string item in luaTable.GetKeys())
+        //{
+        //    print(luaTable.GetInPath<string>(item));
+        //}
+
 
         luaEnv.Dispose();
     }
@@ -46,7 +69,7 @@ interface Iperson
 {
     string name { get; set; }
     int age { get; set; }
-    void eat(int min,int max);
+    void eat(int min, int max);
 }
 struct Person
 {
