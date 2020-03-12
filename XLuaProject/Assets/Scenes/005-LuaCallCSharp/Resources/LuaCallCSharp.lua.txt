@@ -1,0 +1,12 @@
+--构造unity中的游戏物体 new对象
+--CS.UnityEngine.GameObject("new by LUA")
+
+print(CS.UnityEngine.Time.deltaTime)
+
+local gameObject = CS.UnityEngine.GameObject
+
+local camera= gameObject.Find("Main Camera")
+camera.name = "lua by Camera"
+
+local gameCom = camera:GetComponent("Camera")
+gameObject.Destroy(gameCom)

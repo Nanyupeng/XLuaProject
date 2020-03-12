@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scenes\002-helloworld by file\helloworld02.cs" />
     <Compile Include="Assets\Scenes\003-define loader\CreatLoader.cs" />
     <Compile Include="Assets\Scenes\004-CSharpCallLua\CSharpCallLua.cs" />
+    <Compile Include="Assets\Scenes\005-LuaCallCSharp\LuaCallCSharp.cs" />
     <Compile Include="Assets\XLua\Examples\01_Helloworld\Helloworld.cs" />
     <Compile Include="Assets\XLua\Examples\02_U3DScripting\LuaBehaviour.cs" />
     <Compile Include="Assets\XLua\Examples\04_LuaObjectOrented\InvokeLua.cs" />
@@ -116,6 +117,7 @@
     <None Include="Assets\XLua\Examples\07_AsyncTest\Resources\async_test.lua.txt" />
     <None Include="Assets\XLua\Tutorial\LoadLuaScript\ByFile\Resources\byfile.lua.txt" />
     <None Include="Assets\XLua\Examples\06_Coroutine\Resources\coruntine_test.lua.txt" />
+    <None Include="Assets\Scenes\005-LuaCallCSharp\Resources\LuaCallCSharp.lua.txt" />
     <None Include="Assets\XLua\Resources\xlua\util.lua.txt" />
     <None Include="Assets\XLua\Examples\03_UIEvent\ButtonInteraction.lua.txt" />
     <None Include="Assets\XLua\Resources\perf\profiler.lua.txt" />
