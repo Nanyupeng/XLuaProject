@@ -13,6 +13,22 @@ person = {
 	--]]
 }
 
+function add()
+print("我是add")
+end
+
+function add1(a , b)
+print(a+b)
+end
+
+function add2(a , b)
+  return a+b;
+end
+
+function add3(a , b)
+  return a+b,a,b;
+end
+
 age={
 nan=28,
 song = 26,
